@@ -1,0 +1,16 @@
+.header {
+  background-color: var(--clr-blue);
+}
+
+.nav__list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-white);
+  padding: 1em;
+}

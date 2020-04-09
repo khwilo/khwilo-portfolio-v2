@@ -1,5 +1,8 @@
 :root {
   font-size: calc(0.5em + 1vw);
+
+  --clr-blue: hsl(240, 100%, 50%);
+  --clr-white: #ffffff;
 }
 
 *,
@@ -8,9 +11,20 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
