@@ -1,9 +1,12 @@
 import React from 'react';
 
+import About from '../about/About';
+import './Main.css';
+
 function Main() {
   return (
     <main className="main">
-      <h2>Main content area</h2>
+      <About />
     </main>
   );
 }

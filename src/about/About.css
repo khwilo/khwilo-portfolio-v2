@@ -1,0 +1,23 @@
+.section__about {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.portrait-image {
+  width: auto;
+  max-width: 10em;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.profile {
+  margin-top: 1em;
+}
+
+.name {
+  background-color: var(--clr-yellow);
+  padding: 0 0.5em;
+  font-style: italic;
+}
