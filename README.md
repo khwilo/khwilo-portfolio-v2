@@ -1,3 +1,3 @@
-# KHWILO KABAKA PORTFOLIO
+# KHWILO KABAKA
 
-Portfolio website for Khwilo Kabaka
+Online portfolio for Khwilo Kabaka. To view the portfolio, visit this link: [portfolio](https://khwilo.now.sh/).
