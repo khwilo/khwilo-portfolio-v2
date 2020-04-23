@@ -45,6 +45,9 @@ function App() {
             <p className='intro__profession'>
               Mobile Web Application Developer
             </p>
+            <a href='mailto:khwilowatai@gmail.com' className='email-address'>
+              khwilowatai@gmail.com
+            </a>
           </div>
           <div className='profile'>
             <img
@@ -237,16 +240,6 @@ function App() {
                     className='contact__link'
                   >
                     Twitter
-                  </a>
-                </li>
-                <li className='contact_item'>
-                  <a
-                    href='https://dev.to/khwilo'
-                    target='_blank'
-                    rel='noreferrer noopener'
-                    className='contact__link'
-                  >
-                    DEV
                   </a>
                 </li>
               </ul>
