@@ -4,6 +4,8 @@ import About from '../../components/About/About';
 import Posts from '../Posts/Posts';
 import Projects from '../Projects/Projects';
 
+import './Main.css';
+
 const Main = () => {
   return (
     <main className='section-wrapper main'>

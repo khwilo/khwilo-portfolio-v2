@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Post.css';
+
 const Post = ({ title, publishedDate, link }) => {
   return (
     <a

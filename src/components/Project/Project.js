@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Project.css';
+
 const Project = ({ title, descriptionTag, image, link }) => {
   return (
     <article className='project'>

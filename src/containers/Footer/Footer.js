@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ContactList from '../../components/ContactList/ContactList';
+import './Footer.css';
 
 const Footer = () => {
   return (

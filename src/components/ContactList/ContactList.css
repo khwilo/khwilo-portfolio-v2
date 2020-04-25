@@ -1,0 +1,18 @@
+.contact__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.contact__list {
+  display: flex;
+}
+
+.contact_item + .contact_item {
+  margin-left: 1em;
+}
+
+.contact__link {
+  display: block;
+  color: var(--clr-link);
+}
