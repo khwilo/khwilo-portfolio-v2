@@ -17,12 +17,17 @@
   --clr-post-hover: hsl(123, 38%, 64%);
   --clr-box-shadow: hsl(0, 0%, 47%);
   --clr-project-item: hsl(135, 100%, 99%);
+
+  --fs-heading-1: 2.5rem;
+  --fs-heading-2: 2rem;
+  --fs-heading-3: 1rem;
+  --fs-secondary-text: 0.8rem;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 * {
@@ -30,6 +35,7 @@
 }
 
 html {
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -38,26 +44,33 @@ body {
   line-height: 1.5;
   background-color: var(--clr-main);
   color: var(--clr-black);
+  font-size: 1rem;
 }
 
 h1,
 h2,
 h3,
-p {
+p,
+ul {
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: var(--fs-heading-1);
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: var(--fs-heading-2);
   color: var(--clr-section-title);
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: var(--fs-heading-3);
 }
 
 img {
@@ -71,6 +84,11 @@ a {
 
 .center {
   text-align: center;
+}
+
+.secondary-text {
+  color: var(--clr-secondary-txt);
+  font-size: var(--fs-secondary-text);
 }
 
 .header {
@@ -90,17 +108,13 @@ a {
 }
 
 .nav__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: space-between;
 }
 
-.nav__link,
-.contact__link {
+.nav-link {
+  padding: 0.3em 0;
   transition: all 0.6s cubic-bezier(0.5, 0, 0.75, 0);
-  padding: 0.2em 0.5em;
   background: linear-gradient(
     to bottom,
     hsla(123, 38%, 57%, 0) 0%,
@@ -113,22 +127,17 @@ a {
   letter-spacing: 0.1em;
 }
 
-.nav__link {
+.nav-link {
   color: var(--clr-white);
 }
 
-.contact__link {
-  color: var(--clr-link);
-}
-
-.nav__link:hover,
-.contact__link:hover {
+.nav-link:hover {
   background-position: 0 100%;
   color: var(--clr-black);
 }
 
-.intro__name {
-  font-size: 2rem;
+.contact__link {
+  color: var(--clr-link);
 }
 
 .email-address {
@@ -229,10 +238,16 @@ a {
 
 .project__image {
   display: flex;
-  height: 18rem;
+  height: 20rem;
   object-fit: cover;
   object-position: top left;
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+
+@media (min-width: 40em) {
+  .project__image {
+    height: 15rem;
+  }
 }
 
 .project__item:focus {
@@ -246,17 +261,8 @@ a {
   opacity: 0.75;
 }
 
-.project__description {
-  text-align: center;
-}
-
 .project__description-title {
   text-transform: uppercase;
-}
-
-.project__description-tag {
-  font-size: 0.8rem;
-  color: var(--clr-secondary-txt);
 }
 
 @media (min-width: 35em) {
@@ -311,10 +317,6 @@ a {
   }
 }
 
-.post__date {
-  color: var(--clr-secondary-txt);
-}
-
 .footer {
   background-color: var(--clr-footer);
 }
@@ -322,16 +324,11 @@ a {
 .contact__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .contact__list {
-  margin: 0;
-  list-style-type: none;
   display: flex;
-}
-
-.contact_item {
-  flex: 1;
 }
 
 .contact_item + .contact_item {

@@ -11,7 +11,7 @@ const Post = ({ title, publishedDate, link }) => {
     >
       <article className='post'>
         <h3 className='post_title'>{title}</h3>
-        <p className='post__date'>{publishedDate}</p>
+        <p className='post__date secondary-text'>{publishedDate}</p>
       </article>
     </a>
   );

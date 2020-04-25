@@ -8,9 +8,11 @@ const Project = ({ title, descriptionTag, image, link }) => {
           <img src={`/images/${image}`} alt='' className='project__image' />
         </a>
       </div>
-      <div className='project__description'>
+      <div className='project__description center'>
         <h3 className='project__description-title'>{title}</h3>
-        <p className='project__description-tag'>{descriptionTag}</p>
+        <p className='project__description-tag secondary-text'>
+          {descriptionTag}
+        </p>
       </div>
     </article>
   );

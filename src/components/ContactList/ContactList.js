@@ -8,7 +8,7 @@ const ContactList = () => {
           href='https://www.linkedin.com/in/khwilo-watai'
           target='_blank'
           rel='noreferrer noopener'
-          className='contact__link'
+          className='contact__link nav-link'
         >
           LinkedIn
         </a>
@@ -18,7 +18,7 @@ const ContactList = () => {
           href='https://github.com/khwilo'
           target='_blank'
           rel='noreferrer noopener'
-          className='contact__link'
+          className='contact__link nav-link'
         >
           GitHub
         </a>
@@ -28,7 +28,7 @@ const ContactList = () => {
           href='https://api.whatsapp.com/send?phone=+254718802061'
           target='_blank'
           rel='noreferrer noopener'
-          className='contact__link'
+          className='contact__link nav-link'
         >
           WhatsApp
         </a>
@@ -38,7 +38,7 @@ const ContactList = () => {
           href='https://twitter.com/khwilo'
           target='_blank'
           rel='noreferrer noopener'
-          className='contact__link'
+          className='contact__link nav-link'
         >
           Twitter
         </a>

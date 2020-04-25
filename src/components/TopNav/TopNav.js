@@ -5,27 +5,27 @@ const TopNav = () => {
     <nav className='nav'>
       <ul className='nav__list'>
         <li className='nav__item'>
-          <a href='/' className='nav__link'>
+          <a href='/' className='nav-link'>
             Home
           </a>
         </li>
         <li className='nav__item'>
-          <a href='#about' className='nav__link'>
+          <a href='#about' className='nav-link'>
             About
           </a>
         </li>
         <li className='nav__item'>
-          <a href='#projects' className='nav__link'>
+          <a href='#projects' className='nav-link'>
             Projects
           </a>
         </li>
         <li className='nav__item'>
-          <a href='#writing' className='nav__link'>
+          <a href='#writing' className='nav-link'>
             Writing
           </a>
         </li>
         <li className='nav__item'>
-          <a href='#contact' className='nav__link'>
+          <a href='#contact' className='nav-link'>
             Contact
           </a>
         </li>
