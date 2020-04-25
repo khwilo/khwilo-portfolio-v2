@@ -1,10 +1,22 @@
 :root {
   font-size: calc(0.5em + 1vw);
 
-  --clr-primary: hsl(240, 100%, 50%);
-  --clr-secondary: hsl(240, 10%, 90%);
-  --clr-complement: hsl(60, 100%, 50%);
-  --clr-white: #ffffff;
+  --clr-white: hsla(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-gold: hsl(51, 100%, 50%);
+  --clr-green: hsl(123, 38%, 57%);
+  --clr-medium-green: hsl(125, 30%, 45%);
+
+  --clr-banner: hsl(124, 21%, 55%);
+  --clr-main: hsl(125, 39%, 94%);
+  --clr-footer: hsl(125, 9%, 74%);
+
+  --clr-link: hsl(120, 100%, 10%);
+  --clr-section-title: hsl(124, 55%, 24%);
+  --clr-secondary-txt: hsl(0, 0%, 38%);
+  --clr-post-hover: hsl(123, 38%, 64%);
+  --clr-box-shadow: hsl(0, 0%, 47%);
+  --clr-project-item: hsl(135, 100%, 99%);
 }
 
 *,
@@ -24,7 +36,8 @@ html {
 body {
   margin: 0;
   line-height: 1.5;
-  background: #e8f5e9;
+  background-color: var(--clr-main);
+  color: var(--clr-black);
 }
 
 h1,
@@ -40,7 +53,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: #1b5e20;
+  color: var(--clr-section-title);
 }
 
 h3 {
@@ -53,7 +66,7 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--clr-black);
 }
 
 .center {
@@ -61,7 +74,7 @@ a {
 }
 
 .header {
-  background-color: #75a478;
+  background-color: var(--clr-banner);
 }
 
 .container {
@@ -84,31 +97,34 @@ a {
   justify-content: space-between;
 }
 
-.nav__link {
-  color: #ffffff;
-}
-
 .nav__link,
 .contact__link {
   transition: all 0.6s cubic-bezier(0.5, 0, 0.75, 0);
   padding: 0.2em 0.5em;
-  /* color: #003300; */
   background: linear-gradient(
     to bottom,
-    rgba(102, 187, 106, 0) 0%,
-    rgba(102, 187, 106, 0) 50%,
-    rgba(102, 187, 106, 1) 50%,
-    rgba(102, 187, 106, 1) 100%
+    hsla(123, 38%, 57%, 0) 0%,
+    hsla(123, 38%, 57%, 0) 50%,
+    hsl(123, 38%, 57%) 50%,
+    hsl(123, 38%, 57%) 100%
   );
   background-repeat: no-repeat;
   background-size: 100% 200%;
   letter-spacing: 0.1em;
 }
 
+.nav__link {
+  color: var(--clr-white);
+}
+
+.contact__link {
+  color: var(--clr-link);
+}
+
 .nav__link:hover,
 .contact__link:hover {
   background-position: 0 100%;
-  color: black;
+  color: var(--clr-black);
 }
 
 .intro__name {
@@ -125,9 +141,9 @@ a {
 }
 
 .email-address:hover {
-  background-color: #519657;
-  box-shadow: 0 10px 6px -6px #777;
-  color: #ffffff;
+  background-color: var(--clr-medium-green);
+  box-shadow: 0 10px 6px -6px var(--clr-box-shadow);
+  color: var(--clr-white);
 }
 
 .nav__item {
@@ -148,8 +164,8 @@ a {
 .intro__profession {
   display: inline-block;
   padding: 0.2em 0.5em;
-  background-color: hsl(51, 100%, 50%);
-  border-bottom: 4px solid rgba(102, 187, 106, 1);
+  background-color: var(--clr-gold);
+  border-bottom: 4px solid var(--clr-green);
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -162,7 +178,7 @@ a {
 }
 
 .profile-image {
-  border: 3px solid #519657;
+  border: 3px solid var(--clr-medium-green);
   margin: 0 auto;
 }
 
@@ -203,12 +219,12 @@ a {
 
 .project__image-wrapper {
   position: relative;
-  border: 4px solid white;
+  border: 4px solid var(--clr-white);
   overflow: hidden;
 }
 
 .project__item {
-  background: #fbfffc;
+  background: var(--clr-project-item);
 }
 
 .project__image {
@@ -240,7 +256,7 @@ a {
 
 .project__description-tag {
   font-size: 0.8rem;
-  color: #616161;
+  color: var(--clr-secondary-txt);
 }
 
 @media (min-width: 35em) {
@@ -274,8 +290,8 @@ a {
 }
 
 .post {
-  background: #ffffff;
-  border-left: 4px solid hsl(51, 100%, 50%);
+  background: var(--clr-white);
+  border-left: 4px solid var(--clr-gold);
   border-radius: 3px;
   padding: 0.2em 0.5em 0.2em 0.2em;
   transition: background-color 0.6s cubic-bezier(0.55, 0, 1, 0.45),
@@ -283,8 +299,8 @@ a {
 }
 
 .post:hover {
-  background-color: #81c784;
-  box-shadow: 0 10px 6px -6px #777;
+  background-color: var(--clr-post-hover);
+  box-shadow: 0 10px 6px -6px var(--clr-box-shadow);
 }
 
 @media (min-width: 35em) {
@@ -296,11 +312,11 @@ a {
 }
 
 .post__date {
-  color: #616161;
+  color: var(--clr-secondary-txt);
 }
 
 .footer {
-  background-color: #b6c2b7;
+  background-color: var(--clr-footer);
 }
 
 .contact__wrapper {
