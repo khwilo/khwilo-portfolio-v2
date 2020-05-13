@@ -6,6 +6,11 @@ import './Posts.css';
 const Posts = () => {
   const postsList = [
     {
+      title: 'Getting started with forms in React',
+      publishedDate: 'May 11, 2020',
+      link: 'https://dev.to/khwilo/getting-started-with-forms-in-react-3h87',
+    },
+    {
       title: "Display a user's password on input",
       publishedDate: 'Feb 13, 2020',
       link: 'https://dev.to/khwilo/til-form-password-reveal-g37',
