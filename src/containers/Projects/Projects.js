@@ -6,6 +6,12 @@ import './Projects.css';
 const Projects = () => {
   const projectList = [
     {
+      title: 'Job Listings',
+      descriptionTag: 'Responsive Design, Filter Search, Grid Layout, Flex',
+      image: 'joblistings.png',
+      link: 'https://joblistings.now.sh/',
+    },
+    {
       title: 'Countries Info',
       descriptionTag: 'Responsive Design, Grid Layout, Themes, PWA',
       image: 'countries-info.png',
