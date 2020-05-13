@@ -14,7 +14,7 @@ const Banner = () => {
       </div>
       <div className='intro'>
         <h1 className='intro__name'>Hi, I'm Khwilo Kabaka</h1>
-        <div class='intro__details'>
+        <div className='intro__details'>
           <p className='intro__profession'>Mobile Web Application Developer</p>
           <a href='mailto:khwilowatai@gmail.com' className='email-address'>
             khwilowatai@gmail.com
