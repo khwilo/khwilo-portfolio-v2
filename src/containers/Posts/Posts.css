@@ -1,8 +1,0 @@
-@media (min-width: 35em) {
-  .posts__wrapper {
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30%, auto));
-    gap: 1em;
-  }
-}

@@ -1,8 +1,0 @@
-.nav__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav__item {
-  padding: 0.8em 0;
-}

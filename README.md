@@ -1,3 +1,3 @@
-# KHWILO KABAKA
+# PORTFOLIO
 
-Online portfolio for Khwilo Kabaka. To view the portfolio, visit this link: [portfolio](https://khwilo.now.sh/).
+Online portfolio for [Khwilo Kabaka](https://github.com/khwilo).
