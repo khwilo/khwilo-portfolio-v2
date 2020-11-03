@@ -60,13 +60,16 @@ a {
   margin-top: 1rem;
 }
 
-.home__container {
-  padding: 0 2em;
+.home {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding: 2em;
 }
 
 @media (min-width: 35em) {
-  .home__container {
-    width: 60%;
+  .home {
+    flex-direction: row;
   }
 }
 
@@ -97,4 +100,16 @@ a {
 .articles-host__link:hover {
   opacity: 1;
   color: #1565c0;
+}
+
+.illustration {
+  margin: 0 0 2.5rem 0;
+}
+
+@media (min-width: 35em) {
+  .illustration {
+    margin: 0 0 0 2rem;
+    display: flex;
+    justify-content: center;
+  }
 }

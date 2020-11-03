@@ -120,6 +120,13 @@ export default function Home() {
             </ul>
           </section>
         </div>
+
+        <div className='illustration'>
+          <img
+            src='images/progressive_app.svg'
+            alt='desktop personal computer and mobile phone'
+          />
+        </div>
       </div>
     </div>
   );
