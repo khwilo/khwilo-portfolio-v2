@@ -31,7 +31,7 @@ export default function Home() {
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                <FontAwesomeIcon icon={faFileAlt} />
+                <FontAwesomeIcon icon={faFileAlt} color='#707070' />
               </a>
             </li>
             <li className='nav__item'>
@@ -41,7 +41,7 @@ export default function Home() {
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon icon={faLinkedin} color='#0077B5' />
               </a>
             </li>
             <li className='nav__item'>
@@ -51,7 +51,7 @@ export default function Home() {
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faGithub} color='#131313' />
               </a>
             </li>
             <li className='nav__item'>
@@ -61,7 +61,7 @@ export default function Home() {
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                <FontAwesomeIcon icon={faEnvelope} />
+                <FontAwesomeIcon icon={faEnvelope} color='#E94034' />
               </a>
             </li>
             <li className='nav__item'>
@@ -71,7 +71,7 @@ export default function Home() {
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                <FontAwesomeIcon icon={faWhatsapp} />
+                <FontAwesomeIcon icon={faWhatsapp} color='#00AA00' />
               </a>
             </li>
             <li className='nav__item'>
@@ -81,7 +81,7 @@ export default function Home() {
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faTwitter} color='#50ABF1' />
               </a>
             </li>
           </ul>
@@ -90,8 +90,9 @@ export default function Home() {
         <section className='writing'>
           <h2 className='writing__title'>Writing</h2>
           <ul className='writing__list'>
-            <li className=''>
+            <li className='articles-host'>
               <a
+                className='articles-host__link'
                 href='https://developers.decoded.africa/author/khwilo/'
                 target='_blank'
                 rel='noreferrer noopener'
@@ -99,8 +100,9 @@ export default function Home() {
                 @decoded.africa/khwilo
               </a>
             </li>
-            <li className=''>
+            <li className='articles-host'>
               <a
+                className='articles-host__link'
                 href='https://dev.to/khwilo'
                 target='_blank'
                 rel='noreferrer noopener'

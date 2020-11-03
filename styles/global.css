@@ -87,3 +87,14 @@ a {
   padding-left: 1rem;
   list-style-type: disc;
 }
+
+.articles-host__link {
+  font-weight: 700;
+  opacity: 0.5;
+  transition: all 600ms ease-in;
+}
+
+.articles-host__link:hover {
+  opacity: 1;
+  color: #1565c0;
+}
