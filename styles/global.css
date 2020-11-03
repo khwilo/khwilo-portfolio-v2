@@ -48,3 +48,37 @@ a {
   text-decoration: none;
   color: var(--clr-black);
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.flow > * + * {
+  margin-top: 1rem;
+}
+
+.home__container {
+  width: 60%;
+  padding: 0 2em;
+}
+
+.banner__title {
+  line-height: 1;
+  font-size: 3rem;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item + .nav__item {
+  margin-left: 1rem;
+}
+
+.writing__list {
+  padding-left: 1rem;
+  list-style-type: disc;
+}
