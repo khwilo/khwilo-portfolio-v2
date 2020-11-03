@@ -1,4 +1,11 @@
-import Link from 'next/link';
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 export default function Home() {
   return (
     <div className='home wrapper'>
@@ -17,29 +24,29 @@ export default function Home() {
         <div className='portfolio nav'>
           <ul className='nav__list'>
             <li className='nav__item'>
-              <Link href='#'>
-                <a className='nav__link'>Resume</a>
-              </Link>
+              <a className='nav__link' href='#'>
+                <FontAwesomeIcon icon={faFileAlt} />
+              </a>
             </li>
             <li className='nav__item'>
-              <Link href='#'>
-                <a className='nav__link'>LinkedIn</a>
-              </Link>
+              <a className='nav__link' href='#'>
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
             </li>
             <li className='nav__item'>
-              <Link href='#'>
-                <a className='nav__link'>GitHub</a>
-              </Link>
+              <a className='nav__link' href='#'>
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
             </li>
             <li className='nav__item'>
-              <Link href='#'>
-                <a className='nav__link'>Gmail</a>
-              </Link>
+              <a className='nav__link' href='#'>
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
             </li>
             <li className='nav__item'>
-              <Link href='#'>
-                <a className='nav__link'>Twitter</a>
-              </Link>
+              <a className='nav__link' href='#'>
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
             </li>
           </ul>
         </div>
@@ -48,14 +55,10 @@ export default function Home() {
           <h2 className='writing__title'>Writing</h2>
           <ul className='writing__list'>
             <li className=''>
-              <Link href='#'>
-                <a>@decoded.africa/khwilo</a>
-              </Link>
+              <a href='#'>@decoded.africa/khwilo</a>
             </li>
             <li className=''>
-              <Link href='​#'>
-                <a>@dev.to/khwilo</a>
-              </Link>
+              <a href='#'>@dev.to/khwilo</a>
             </li>
           </ul>
         </section>
