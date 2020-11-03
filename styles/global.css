@@ -61,8 +61,13 @@ a {
 }
 
 .home__container {
-  width: 60%;
   padding: 0 2em;
+}
+
+@media (min-width: 35em) {
+  .home__container {
+    width: 60%;
+  }
 }
 
 .banner__title {
