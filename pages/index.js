@@ -17,7 +17,7 @@ export default function Home() {
               Mobile Web Application Developer & Technical Writer
             </h1>
             <p className='banner__text'>
-              Hi, I'm Khwilo Kabaka. I specialize in frontend development with
+              Hi, I'm Khwilo Kabaka. I specialize in front-end development with
               React, mobile application development with React Native, and
               server-side development with Node.js and Express.
             </p>
