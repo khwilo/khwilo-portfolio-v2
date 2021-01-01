@@ -1,6 +1,7 @@
 :root {
   --clr-black: #000000;
   --clr-white: #ffffff;
+  --clr-bg-body: #eceff1;
 }
 
 *,
@@ -22,7 +23,7 @@ body {
   margin: 0;
   padding: 1em;
   line-height: 1.5;
-  background-color: #eceff1;
+  background-color: var(--clr-bg-body);
   color: var(--clr-black);
 }
 
@@ -57,7 +58,7 @@ a {
 }
 
 .flow > * + * {
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 
 .home {
@@ -75,7 +76,7 @@ a {
 
 .banner__title {
   line-height: 1;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .nav__list {
@@ -83,11 +84,11 @@ a {
 }
 
 .nav__item + .nav__item {
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 
 .writing__list {
-  padding-left: 1rem;
+  padding-left: 1em;
   list-style-type: disc;
 }
 
@@ -103,12 +104,12 @@ a {
 }
 
 .illustration {
-  margin: 0 0 2.5rem 0;
+  margin: 0 0 2.5em 0;
 }
 
 @media (min-width: 35em) {
   .illustration {
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 2em;
     display: flex;
     justify-content: center;
   }
