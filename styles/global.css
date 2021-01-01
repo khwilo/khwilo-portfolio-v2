@@ -1,6 +1,4 @@
 :root {
-  font-size: calc(0.5em + 1vw);
-
   --clr-black: #000000;
   --clr-white: #ffffff;
 }
@@ -22,8 +20,9 @@ html {
 
 body {
   margin: 0;
+  padding: 1em;
   line-height: 1.5;
-  background-color: var(--clr-white);
+  background-color: #eceff1;
   color: var(--clr-black);
 }
 
@@ -53,7 +52,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 2em);
+  background-color: var(--clr-white);
 }
 
 .flow > * + * {
