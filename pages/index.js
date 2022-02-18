@@ -27,7 +27,7 @@ export default function Home() {
                 <a
                   aria-label='resume'
                   className='nav__link'
-                  href='https://drive.google.com/file/d/1_Y45kRZ0jogzU9FN5Z26PnEi1eVPURRp/view?usp=sharing'
+                  href='https://drive.google.com/file/d/1pmVjHfLSNylizxmZkGGnWqI7czyxjWGo/view?usp=sharing'
                   target='_blank'
                   rel='noreferrer noopener'
                 >
@@ -38,7 +38,7 @@ export default function Home() {
                 <a
                   aria-label='LinkedIn'
                   className='nav__link'
-                  href='https://www.linkedin.com/in/khwilo-watai'
+                  href='https://www.linkedin.com/in/khwilokabaka/'
                   target='_blank'
                   rel='noreferrer noopener'
                 >
