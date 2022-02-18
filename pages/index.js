@@ -14,12 +14,10 @@ export default function Home() {
         <div className='home__container flow'>
           <div className='banner'>
             <h1 className='banner__title'>
-              Mobile Web Application Developer & Technical Writer
+              Backend Software Engineer & Technical Writer
             </h1>
             <p className='banner__text'>
-              Hi, I'm Khwilo Kabaka. I specialize in front-end development with
-              React, mobile application development with React Native, and
-              server-side development with Node.js and Express.
+              Hi, I'm Khwilo Kabaka. I specialize in backend software development using Spring Boot.
             </p>
           </div>
 
